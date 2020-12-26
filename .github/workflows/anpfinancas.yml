@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-tests-deployment:
     env:
       CAMINHO_PROJETO_TESTES: ./APIFinancas.Especificacoes/APIFinancas.Especificacoes.csproj
       CAMINHO_PROJETO_WEBAPP: ./APIFinancas
