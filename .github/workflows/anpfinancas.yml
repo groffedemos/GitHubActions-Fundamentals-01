@@ -27,7 +27,12 @@ jobs:
         # Teste
         # Especificada a versao mais recente do .NET 5
         dotnet-version: 5.0.101
-        
+    
+    - name: Exibir versão do .NET e do Ubuntu
+      run: |
+        dotnet --version
+        lsb_release -a
+    
     - name: Build com o utilitario dotnet
       run: dotnet build ${{ env.CAMINHO_PROJETO_WEBAPP }} --configuration Release
 
