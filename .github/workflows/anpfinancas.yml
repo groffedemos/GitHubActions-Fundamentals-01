@@ -27,9 +27,6 @@ jobs:
         # Teste
         # Especificada a versao mais recente do .NET 5
         dotnet-version: 5.0.101
-
-    - name: Listar versões do .NET após uso da Action de Setup
-      run: dotnet --list-sdks
         
     - name: Build com o utilitario dotnet
       run: dotnet build ${{ env.CAMINHO_PROJETO_WEBAPP }} --configuration Release
